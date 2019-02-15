@@ -1,6 +1,1 @@
-[submodule "LiC-app"]
-	path = LiC-app
-	url = https://github.com/tonyahowe/LiC-app
-[submodule "LiC-data"]
-	path = LiC-data
-	url = https://github.com/tonyahowe/LiC-data
+
