@@ -46,8 +46,8 @@ COPY conf/controller-config.xml /exist/webapp/WEB-INF/
 # See: https://exist-open.markmail.org/message/gjp2po2ducmckvix?q=set+app+as+root+order:date-backward
 COPY conf/exist-webapp-context.xml /exist/tools/jetty/webapps/
 
-COPY --from=builder /home/LiC-docker/LiC-app/build/*.xar /exist/autodeploy
-COPY --from=builder /home/LiC-docker/LiC-data/build/*.xar /exist/autodeploy
+COPY --from=builder /home/LiC-docker/LiC-app/build/*.xar /exist/autodeploy/
+COPY --from=builder /home/LiC-docker/LiC-data/build/*.xar /exist/autodeploy/
 
 EXPOSE 8080 8443
 
