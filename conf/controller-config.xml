@@ -38,7 +38,8 @@
   -->
   
   <!-- The JMX status servlet used to monitor the db -->
-  <forward pattern="/status" servlet="JMXServlet"/>
+  <!-- Updated for LiC for use even with /exist/ removed -->
+  <forward pattern="/apps/status" servlet="JMXServlet"/>
   
   <!-- 
     ++ Default configuration: main web application is served from the

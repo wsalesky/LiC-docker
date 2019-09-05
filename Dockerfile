@@ -34,7 +34,7 @@ WORKDIR /home/LiC-docker/LiC-data
 RUN ant
 
 # START STAGE 2 : Use the latest eXist-db release as a base image
-FROM existdb/existdb:release
+FROM existdb/existdb:4.7.0
 
 # Copy Srophe required libraries/modules to autodeploy 
 COPY autodeploy/*.xar /exist/autodeploy/
